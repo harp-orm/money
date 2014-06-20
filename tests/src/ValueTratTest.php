@@ -1,6 +1,7 @@
 <?php
 
 namespace Harp\Money\Test;
+
 use SebastianBergmann\Money\Currency;
 use SebastianBergmann\Money\Money;
 
