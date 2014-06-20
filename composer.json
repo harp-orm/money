@@ -1,0 +1,22 @@
+{
+    "name": "harp-orm/money",
+    "description": "Helper Traits for Sebastian Bergmann's Money",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ivan Kerin",
+            "email": "ikerin@gmail.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "harp-orm/core": "dev-master",
+        "harp-orm/validate": "dev-master",
+        "harp-orm/serializer": "dev-master",
+        "clippings/currency-convert": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {"Harp\\Money\\": "src/"}
+    }
+}
