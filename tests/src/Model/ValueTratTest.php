@@ -1,12 +1,13 @@
 <?php
 
-namespace Harp\Money\Test;
+namespace Harp\Money\Test\Model;
 
 use SebastianBergmann\Money\Currency;
 use SebastianBergmann\Money\Money;
+use Harp\Money\Test\AbstractTestCase;
 
 /**
- * @coversDefaultClass Harp\Money\ValueTrait
+ * @coversDefaultClass Harp\Money\Model\ValueTrait
  */
 class ValueTraitTest extends AbstractTestCase
 {

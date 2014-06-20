@@ -1,12 +1,13 @@
 <?php
 
-namespace Harp\Money\Test;
+namespace Harp\Money\Test\Model;
 
 use SebastianBergmann\Money\Currency;
 use SebastianBergmann\Money\Money;
+use Harp\Money\Test\AbstractTestCase;
 
 /**
- * @coversDefaultClass Harp\Money\FreezableValueTrait
+ * @coversDefaultClass Harp\Money\Model\FreezableValueTrait
  */
 class FreezableValueTraitTest extends AbstractTestCase
 {
@@ -19,7 +20,7 @@ class FreezableValueTraitTest extends AbstractTestCase
     public function testTest()
     {
         $product = new Product(['value' => 200]);
-        $item = new PurchaseItem($product);
+        $item = new PurchaseItem(['product' => $product]);
 
         $this->assertSame(0, $item->value);
         $item->getProduct()->value = 800;

@@ -1,9 +1,11 @@
 <?php
 
-namespace Harp\Money\Test;
+namespace Harp\Money\Test\Model;
+
+use Harp\Money\Test\AbstractTestCase;
 
 /**
- * @coversDefaultClass Harp\Money\FreezableTrait
+ * @coversDefaultClass Harp\Money\Model\FreezableTrait
  */
 class FreezableTraitTest extends AbstractTestCase
 {
@@ -13,7 +15,7 @@ class FreezableTraitTest extends AbstractTestCase
      */
     public function testTest()
     {
-        $item = new ShippingItem(new DeliveryDaysSource(8));
+        $item = new ShippingItem(['sourceDays' => 8]);
 
         $this->assertSame(false, $item->isFrozen);
         $this->assertSame(0, $item->deliveryDays);
