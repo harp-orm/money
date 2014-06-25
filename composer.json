@@ -11,7 +11,6 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "harp-orm/query": "dev-master",
         "harp-orm/harp": "dev-master",
         "harp-orm/core": "dev-master",
         "clippings/currency-convert": "~0.1"

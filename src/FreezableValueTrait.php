@@ -1,6 +1,6 @@
 <?php
 
-namespace Harp\Money\Model;
+namespace Harp\Money;
 
 use CL\CurrencyConvert\Converter;
 use SebastianBergmann\Money\Money;

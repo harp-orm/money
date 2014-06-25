@@ -1,19 +1,18 @@
 <?php
 
-namespace Harp\Money\Test\Repo;
+namespace Harp\Money\Test;
 
-use Harp\Money\Test\AbstractTestCase;
 /**
- * @coversDefaultClass Harp\Money\Repo\FreezableValueTrait
+ * @coversDefaultClass Harp\Money\FreezableValueRepoTrait
  */
-class FreezableValueTraitTest extends AbstractTestCase
+class FreezableValueRepoTraitTest extends AbstractTestCase
 {
     /**
      * @covers ::initializeFreezableValue
      */
     public function testTest()
     {
-        $repo = PurchaseItem::newInstance();
+        $repo = new PurchaseItemRepo();
         $repo->initialize();
         $purchaseItem = $repo->newModel(['value' => null]);
 

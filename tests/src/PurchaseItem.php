@@ -1,22 +1,18 @@
 <?php
 
-namespace Harp\Money\Test\Model;
+namespace Harp\Money\Test;
 
 use Harp\Harp\AbstractModel;
-use Harp\Money\Test\Repo;
-use Harp\Money\Model\FreezableValueTrait;
-use Harp\Money\Model\CurrencyTrait;
+use Harp\Money\FreezableValueTrait;
+use Harp\Money\CurrencyTrait;
 
 
 class PurchaseItem extends AbstractModel
 {
+    const REPO = 'Harp\Money\Test\PurchaseItemRepo';
+
     use CurrencyTrait;
     use FreezableValueTrait;
-
-    public function getRepo()
-    {
-        return Repo\PurchaseItem::get();
-    }
 
     public $product;
 

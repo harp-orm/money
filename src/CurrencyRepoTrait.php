@@ -1,8 +1,7 @@
 <?php
 
-namespace Harp\Money\Repo;
+namespace Harp\Money;
 
-use Harp\Money\AssertCurrency;
 use Harp\Validate\Assert;
 
 /**
@@ -10,16 +9,16 @@ use Harp\Validate\Assert;
  * @copyright 2014, Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause
  */
-trait ValueTrait
+trait CurrencyRepoTrait
 {
     abstract public function addAsserts(array $asserts);
 
-    public function initializeValue()
+    public function initializeCurrency()
     {
         $this
             ->addAsserts([
-                new Assert\Present('value'),
-                new Assert\Number('value'),
+                new Assert\Present('currency'),
+                new AssertCurrency('currency'),
             ]);
 
         return $this;

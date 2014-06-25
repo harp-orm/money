@@ -1,19 +1,15 @@
 <?php
 
-namespace Harp\Money\Test\Model;
+namespace Harp\Money\Test;
 
 use Harp\Harp\AbstractModel;
-use Harp\Money\Test\Repo;
-use Harp\Money\Model\FreezableTrait;
+use Harp\Money\FreezableTrait;
 
 class ShippingItem extends AbstractModel
 {
-    use FreezableTrait;
+    const REPO = 'Harp\Money\Test\ShippingItemRepo';
 
-    public function getRepo()
-    {
-        return Repo\ShippingItem::get();
-    }
+    use FreezableTrait;
 
     public $deliveryDays = 0;
     public $sourceDays = 0;

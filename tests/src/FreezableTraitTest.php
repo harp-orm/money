@@ -1,11 +1,9 @@
 <?php
 
-namespace Harp\Money\Test\Model;
-
-use Harp\Money\Test\AbstractTestCase;
+namespace Harp\Money\Test;
 
 /**
- * @coversDefaultClass Harp\Money\Model\FreezableTrait
+ * @coversDefaultClass Harp\Money\FreezableTrait
  */
 class FreezableTraitTest extends AbstractTestCase
 {

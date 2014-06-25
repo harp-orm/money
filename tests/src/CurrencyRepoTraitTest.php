@@ -1,19 +1,18 @@
 <?php
 
-namespace Harp\Money\Test\Repo;
+namespace Harp\Money\Test;
 
-use Harp\Money\Test\AbstractTestCase;
 /**
- * @coversDefaultClass Harp\Money\Repo\CurrencyTrait
+ * @coversDefaultClass Harp\Money\CurrencyRepoTrait
  */
-class CurrencyTraitTest extends AbstractTestCase
+class CurrencyRepoTraitTest extends AbstractTestCase
 {
     /**
      * @covers ::initializeCurrency
      */
     public function testTest()
     {
-        $repo = Product::newInstance();
+        $repo = new ProductRepo();
         $repo->initialize();
         $product = $repo->newModel(['currency' => null]);
 
