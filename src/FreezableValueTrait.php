@@ -52,13 +52,23 @@ trait FreezableValueTrait
         return $value;
     }
 
-    public function performFreeze()
+    public function freezeValue()
     {
         $this->setValue($this->getValue());
     }
 
-    public function performUnfreeze()
+    public function unfreezeValue()
     {
         $this->value = 0;
+    }
+
+    public function performFreeze()
+    {
+        $this->freezeValue();
+    }
+
+    public function performUnfreeze()
+    {
+        $this->unfreezeValue();
     }
 }

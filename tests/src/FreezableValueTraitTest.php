@@ -19,6 +19,8 @@ class FreezableValueTraitTest extends AbstractTestCase
      * @covers ::getConvertedSourceValue
      * @covers ::performFreeze
      * @covers ::performUnfreeze
+     * @covers ::freezeValue
+     * @covers ::unfreezeValue
      */
     public function testTest()
     {
