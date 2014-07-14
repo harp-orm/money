@@ -67,6 +67,8 @@ trait FreezableValueTrait
     public function freezeValue()
     {
         $this->setValue($this->getValue());
+
+        return $this;
     }
 
     /**
@@ -75,6 +77,8 @@ trait FreezableValueTrait
     public function unfreezeValue()
     {
         $this->value = 0;
+
+        return $this;
     }
 
     /**
