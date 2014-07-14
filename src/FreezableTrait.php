@@ -21,6 +21,11 @@ trait FreezableTrait
     abstract public function performFreeze();
     abstract public function performUnfreeze();
 
+    /**
+     * Sets "isFrozen" and executes performFreeze
+     *
+     * @return static
+     */
     public function freeze()
     {
         if (! $this->isFrozen) {
@@ -31,6 +36,11 @@ trait FreezableTrait
         return $this;
     }
 
+    /**
+     * Unsets "isFrozen" and executes performUnfreeze
+     *
+     * @return static
+     */
     public function unfreeze()
     {
         if ($this->isFrozen) {

@@ -42,7 +42,7 @@ trait ValueTrait
     }
 
     /**
-     * @return self
+     * @return static
      */
     public function setValue(Money $value)
     {

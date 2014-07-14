@@ -28,6 +28,9 @@ trait FreezableValueTrait
         ValueTrait::initialize($config);
     }
 
+    /**
+     * @return Money
+     */
     abstract public function getSourceValue();
 
     /**
@@ -40,6 +43,12 @@ trait FreezableValueTrait
             : $this->getConvertedSourceValue();
     }
 
+    /**
+     * Converts the currency of "getSourceValue" if the currency is different
+     * Uses Converter class
+     *
+     * @return Money
+     */
     public function getConvertedSourceValue()
     {
         $currency = $this->getCurrency();
@@ -52,21 +61,33 @@ trait FreezableValueTrait
         return $value;
     }
 
+    /**
+     * @return static
+     */
     public function freezeValue()
     {
         $this->setValue($this->getValue());
     }
 
+    /**
+     * @return static
+     */
     public function unfreezeValue()
     {
         $this->value = 0;
     }
 
+    /**
+     * Implement FreezableTrait
+     */
     public function performFreeze()
     {
         $this->freezeValue();
     }
 
+    /**
+     * Implement FreezableTrait
+     */
     public function performUnfreeze()
     {
         $this->unfreezeValue();

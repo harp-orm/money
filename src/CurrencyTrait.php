@@ -40,6 +40,10 @@ trait CurrencyTrait
         return new Currency($this->currency);
     }
 
+    /**
+     * @param  Currency $currency
+     * @return static
+     */
     public function setCurrency(Currency $currency)
     {
         $this->currency = $currency->getCurrencyCode();
