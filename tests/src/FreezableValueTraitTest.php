@@ -42,4 +42,27 @@ class FreezableValueTraitTest extends AbstractTestCase
         $this->assertSame(0, $item->value);
         $this->assertEquals(new Money(400, new Currency('GBP')), $item->getValue());
     }
+
+    /**
+     * @covers ::initialize
+     */
+    public function testInitialize()
+    {
+        $purchaseItem = new PurchaseItem(['value' => null]);
+
+        $purchaseItem->validate();
+
+        $this->assertEquals(
+            'value must be present',
+            $purchaseItem->getErrors()->humanize()
+        );
+
+        $purchaseItem->value = 'asd';
+        $purchaseItem->validate();
+
+        $this->assertEquals(
+            'value is an invalid number',
+            $purchaseItem->getErrors()->humanize()
+        );
+    }
 }

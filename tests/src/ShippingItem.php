@@ -12,9 +12,11 @@ use Harp\Money\FreezableTrait;
  */
 class ShippingItem extends AbstractModel
 {
-    const REPO = 'Harp\Money\Test\ShippingItemRepo';
-
     use FreezableTrait;
+
+    public static function initialize($config)
+    {
+    }
 
     public $deliveryDays = 0;
     public $sourceDays = 0;

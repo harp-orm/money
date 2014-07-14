@@ -29,4 +29,27 @@ class ValueTraitTest extends AbstractTestCase
         $this->assertEquals(200, $product->value);
         $this->assertEquals(new Money(200, new Currency('GBP')), $product->getValue());
     }
+
+    /**
+     * @covers ::initialize
+     */
+    public function testInitialize()
+    {
+        $product = new Product(['value' => null]);
+
+        $product->validate();
+
+        $this->assertEquals(
+            'value must be present',
+            $product->getErrors()->humanize()
+        );
+
+        $product->value = 'asd';
+        $product->validate();
+
+        $this->assertEquals(
+            'value is an invalid number',
+            $product->getErrors()->humanize()
+        );
+    }
 }

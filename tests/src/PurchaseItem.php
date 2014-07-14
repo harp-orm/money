@@ -13,10 +13,14 @@ use Harp\Money\CurrencyTrait;
  */
 class PurchaseItem extends AbstractModel
 {
-    const REPO = 'Harp\Money\Test\PurchaseItemRepo';
-
     use CurrencyTrait;
     use FreezableValueTrait;
+
+    public static function initialize($config)
+    {
+        CurrencyTrait::initialize($config);
+        FreezableValueTrait::initialize($config);
+    }
 
     public $product;
 

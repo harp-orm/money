@@ -13,8 +13,12 @@ use Harp\Money\CurrencyTrait;
  */
 class Product extends AbstractModel
 {
-    const REPO = 'Harp\Money\Test\ProductRepo';
-
     use CurrencyTrait;
     use ValueTrait;
+
+    public static function initialize($config)
+    {
+        CurrencyTrait::initialize($config);
+        ValueTrait::initialize($config);
+    }
 }

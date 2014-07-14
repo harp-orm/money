@@ -7,6 +7,9 @@ use SebastianBergmann\Money\Money;
 use SebastianBergmann\Money\Currency;
 
 /**
+ * Adds isFrozen property
+ * Requires performFreeze and performUnfreeze methods
+ *
  * @author    Ivan Kerin <ikerin@gmail.com>
  * @copyright 2014, Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause

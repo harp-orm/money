@@ -24,26 +24,13 @@ class User extends AbstractModel
     use ValueTrait;
     use CurrencyTrait;
 
-    // ...
-}
-
-// Repo Class
-use Harp\Harp\AbstractRepo
-use Harp\Money\ValueRepoTrait;
-use Harp\Money\CurrencyRepoTrait;
-
-class UserRepo extends AbstractRepo
-{
-    use ValueRepoTrait;
-    use CurrencyRepoTrait;
-
-    public function initialize()
+    public static function initialize($config)
     {
         // ...
-        $this
-            ->initializeCurrency()
-            ->initializeValue();
+        ValueTrait::initialize($config)
+        CurrencyTrait::initialize($config)
     }
+    // ...
 }
 ```
 
