@@ -2,8 +2,7 @@
 
 namespace Harp\Money;
 
-use Harp\Validate\Error;
-use Harp\Validate\Assert\AbstractAssertion;
+use Harp\Validate\Assert\AbstractValueAssertion;
 use SebastianBergmann\Money\Currency;
 use InvalidArgumentException;
 
@@ -14,23 +13,19 @@ use InvalidArgumentException;
  * @copyright (c) 2014 Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause
  */
-class AssertCurrency extends AbstractAssertion
+class AssertCurrency extends AbstractValueAssertion
 {
     /**
-     * @param  object|array $subject
+     * @param  mixed $value
      * @return Error|null
      */
-    public function execute($subject)
+    public function isValid($value)
     {
-        if ($this->issetProperty($subject, $this->getName())) {
-
-            $value = $this->getProperty($subject, $this->getName());
-
-            try {
-                new Currency($value);
-            } catch (InvalidArgumentException $e) {
-                return new Error($this->getMessage(), $this->getName());
-            }
+        try {
+            new Currency($value);
+            return true;
+        } catch (InvalidArgumentException $e) {
+            return false;
         }
     }
 }

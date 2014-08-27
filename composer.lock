@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8642c5c818c77055c55665005957c80a",
+    "hash": "afac4105848d43e530abd3a868b9daa7",
     "packages": [
         {
             "name": "clippings/currency-convert",
@@ -82,23 +82,23 @@
         },
         {
             "name": "harp-orm/harp",
-            "version": "0.3.0",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/harp.git",
-                "reference": "ddd15e56087ee7f5de9452cbbfe131c4d73e83ea"
+                "reference": "744ea61b77b5e0b2be19c9988697f263d5e7e225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/harp/zipball/ddd15e56087ee7f5de9452cbbfe131c4d73e83ea",
-                "reference": "ddd15e56087ee7f5de9452cbbfe131c4d73e83ea",
+                "url": "https://api.github.com/repos/harp-orm/harp/zipball/744ea61b77b5e0b2be19c9988697f263d5e7e225",
+                "reference": "744ea61b77b5e0b2be19c9988697f263d5e7e225",
                 "shasum": ""
             },
             "require": {
                 "harp-orm/query": "~0.2.0",
                 "harp-orm/serializer": "~0.1.0",
-                "harp-orm/util": "~0.2.0",
-                "harp-orm/validate": "~0.2.0",
+                "harp-orm/util": "~0.2.2",
+                "harp-orm/validate": "~0.4.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -115,12 +115,11 @@
                 {
                     "name": "Ivan Kerin",
                     "email": "ikerin@gmail.com",
-                    "homepage": "http://www.openbuildings.com",
                     "role": "Author"
                 }
             ],
             "description": "Light and Flexible ORM without magic",
-            "time": "2014-07-11 13:26:10"
+            "time": "2014-08-27 14:53:32"
         },
         {
             "name": "harp-orm/query",
@@ -172,16 +171,16 @@
         },
         {
             "name": "harp-orm/serializer",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/serializer.git",
-                "reference": "1cbef206aa54cfc79dc4051d8bdc62d15681db93"
+                "reference": "652a190ceabb4f3c55a41f33e0b23ba5197bd964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/serializer/zipball/1cbef206aa54cfc79dc4051d8bdc62d15681db93",
-                "reference": "1cbef206aa54cfc79dc4051d8bdc62d15681db93",
+                "url": "https://api.github.com/repos/harp-orm/serializer/zipball/652a190ceabb4f3c55a41f33e0b23ba5197bd964",
+                "reference": "652a190ceabb4f3c55a41f33e0b23ba5197bd964",
                 "shasum": ""
             },
             "type": "library",
@@ -203,20 +202,20 @@
                 }
             ],
             "description": "Serialize object properties",
-            "time": "2014-06-21 17:01:33"
+            "time": "2014-07-17 11:30:08"
         },
         {
             "name": "harp-orm/util",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/util.git",
-                "reference": "66de94b09e584b00d1a67090e72f0e31454fab15"
+                "reference": "b077d11dd15bf111313484aa427825a54808671d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/util/zipball/66de94b09e584b00d1a67090e72f0e31454fab15",
-                "reference": "66de94b09e584b00d1a67090e72f0e31454fab15",
+                "url": "https://api.github.com/repos/harp-orm/util/zipball/b077d11dd15bf111313484aa427825a54808671d",
+                "reference": "b077d11dd15bf111313484aa427825a54808671d",
                 "shasum": ""
             },
             "type": "library",
@@ -238,20 +237,20 @@
                 }
             ],
             "description": "General purpose helper methods",
-            "time": "2014-06-12 07:03:18"
+            "time": "2014-07-17 15:29:20"
         },
         {
             "name": "harp-orm/validate",
-            "version": "0.2.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harp-orm/validate.git",
-                "reference": "bc3e94db54fbeb8f68b6e24b674b3382bc314d49"
+                "reference": "c48241562a64ad4bbecc22967b29fdb3ecac118d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harp-orm/validate/zipball/bc3e94db54fbeb8f68b6e24b674b3382bc314d49",
-                "reference": "bc3e94db54fbeb8f68b6e24b674b3382bc314d49",
+                "url": "https://api.github.com/repos/harp-orm/validate/zipball/c48241562a64ad4bbecc22967b29fdb3ecac118d",
+                "reference": "c48241562a64ad4bbecc22967b29fdb3ecac118d",
                 "shasum": ""
             },
             "type": "library",
@@ -268,12 +267,11 @@
                 {
                     "name": "Ivan Kerin",
                     "email": "ikerin@gmail.com",
-                    "homepage": "http://www.openbuildings.com",
                     "role": "Author"
                 }
             ],
             "description": "Object validaiton library",
-            "time": "2014-07-09 14:58:00"
+            "time": "2014-08-27 14:14:20"
         },
         {
             "name": "psr/log",
@@ -315,26 +313,29 @@
         },
         {
             "name": "sebastian/money",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/money.git",
-                "reference": "443b1aa8ff1e52f130febb47216862e91e18cda0"
+                "reference": "79666982385087298eea4b9f05bdc2b431a72821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/money/zipball/443b1aa8ff1e52f130febb47216862e91e18cda0",
-                "reference": "443b1aa8ff1e52f130febb47216862e91e18cda0",
+                "url": "https://api.github.com/repos/sebastianbergmann/money/zipball/79666982385087298eea4b9f05bdc2b431a72821",
+                "reference": "79666982385087298eea4b9f05bdc2b431a72821",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
                 "php": ">=5.3.3"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -349,8 +350,7 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Value Object that represents a monetary value (using a currency's smallest unit)",
@@ -358,7 +358,7 @@
             "keywords": [
                 "money"
             ],
-            "time": "2013-11-13 13:55:24"
+            "time": "2014-07-21 07:05:52"
         }
     ],
     "packages-dev": [
@@ -371,6 +371,7 @@
     "stability-flags": [
 
     ],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.4.0"
     },

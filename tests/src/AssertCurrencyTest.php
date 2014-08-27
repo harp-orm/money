@@ -3,9 +3,6 @@
 namespace Harp\Money\Test;
 
 use Harp\Money\AssertCurrency;
-use Harp\Validate\Test\AbstractTestCase;
-use Harp\Validate\Error;
-use stdClass;
 
 /**
  * @coversDefaultClass Harp\Money\AssertCurrency
@@ -16,24 +13,24 @@ use stdClass;
  */
 class AssertCurrencyTest extends AbstractTestCase
 {
-    public function dataExecute()
+    public function dataIsValid()
     {
         return array(
             array('BGN', true),
             array('GBP', true),
-            array('G31', 'test is invalid'),
-            array('1', 'test is invalid'),
+            array('G31', false),
+            array('1', false),
         );
     }
 
     /**
-     * @dataProvider dataExecute
-     * @covers ::execute
+     * @dataProvider dataIsValid
+     * @covers ::isValid
      */
-    public function testExecute($value, $expected)
+    public function testIsValid($value, $expected)
     {
         $assertion = new AssertCurrency('test');
 
-        $this->assertAssertion($expected, $assertion, $value);
+        $this->assertEquals($expected, $assertion->isValid($value));
     }
 }
