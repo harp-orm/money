@@ -26,6 +26,9 @@ trait ValueTrait
             ]);
     }
 
+    /**
+     * @var integer
+     */
     public $value = 0;
 
     /**
@@ -38,7 +41,7 @@ trait ValueTrait
      */
     public function getValue()
     {
-        return new Money($this->value, $this->getCurrency());
+        return new Money((int) $this->value, $this->getCurrency());
     }
 
     /**
