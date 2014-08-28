@@ -24,7 +24,7 @@ trait FreezableTrait
     /**
      * Sets "isFrozen" and executes performFreeze
      *
-     * @return static
+     * @return self
      */
     public function freeze()
     {
@@ -39,7 +39,7 @@ trait FreezableTrait
     /**
      * Unsets "isFrozen" and executes performUnfreeze
      *
-     * @return static
+     * @return self
      */
     public function unfreeze()
     {

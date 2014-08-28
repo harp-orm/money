@@ -62,7 +62,7 @@ trait FreezableValueTrait
     }
 
     /**
-     * @return static
+     * @return self
      */
     public function freezeValue()
     {
@@ -72,7 +72,7 @@ trait FreezableValueTrait
     }
 
     /**
-     * @return static
+     * @return self
      */
     public function unfreezeValue()
     {

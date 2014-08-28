@@ -17,7 +17,7 @@ class AssertCurrency extends AbstractValueAssertion
 {
     /**
      * @param  mixed $value
-     * @return Error|null
+     * @return boolean
      */
     public function isValid($value)
     {
